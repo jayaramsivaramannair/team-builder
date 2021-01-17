@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Product Development Team Form</h1>
+      <h1>Product Development Team</h1>
       <Form changeFunction = {setMemberFunction} 
       submitFunction = {addMemberFunction} 
       values = {formValues}/>

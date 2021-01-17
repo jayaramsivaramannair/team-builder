@@ -2,6 +2,10 @@
     border: 2px dashed black;
 }
 
+h1 {
+    text-align: center;
+}
+
 label {
     display: block;
     margin-bottom: 20px;
