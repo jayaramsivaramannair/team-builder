@@ -21,6 +21,7 @@ const TeamMember = (props) => {
                             <td><em>{`${member.email} `}</em></td>
                             <td><em>{` ${member.role} `}</em></td>
                             <td><em>{` ${member.location}`}</em></td>
+                            <button>Edit</button>
                         </tr>
                     })}
                 </tbody>

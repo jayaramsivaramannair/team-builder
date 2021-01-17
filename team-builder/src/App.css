@@ -23,3 +23,11 @@ td {
     border: 2px solid black;
     padding: 5px;
 }
+
+input:hover {
+    background: rgba(255, 0, 255, 0.671);
+}
+
+select:hover {
+    background: rgba(255, 0, 255, 0.671);
+}
