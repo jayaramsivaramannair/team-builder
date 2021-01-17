@@ -1,7 +1,5 @@
-#teamContainer span:after {
-    content: " ";
-    display: inline-block;
-    width: 150px;
+#teamContainer {
+    border: 2px dashed black;
 }
 
 label {
@@ -15,4 +13,9 @@ input {
 
 select {
     margin-left: 20px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
 }

@@ -4,17 +4,27 @@ const TeamMember = (props) => {
     const {teamMembers} = props
     return (
         <div id="teamContainer">
-            <h1>Current Team Members On The Team</h1>
-            <span>{`Name`}</span>
-            <span>{`Email`}</span>
-            <span>{`Role`}</span>
-            {teamMembers.map((member, index) => {
-                return <div key={member.id}>
-                    <span>{`${member.name}`}</span>
-                    <span>{`${member.email}`}</span>
-                    <span>{`${member.role}`}</span>
-                </div>
-            })}
+            <h3>Current Team Members</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {teamMembers.map((member, index) => {
+                        return <tr key={member.id}>
+                            <td><em>{`${member.name} `}</em></td>
+                            <td><em>{`${member.email} `}</em></td>
+                            <td><em>{` ${member.role} `}</em></td>
+                            <td><em>{` ${member.location}`}</em></td>
+                        </tr>
+                    })}
+                </tbody>
+            </table>
         </div>
     )
 }
