@@ -2,6 +2,8 @@ import React from 'react';
 
 const Form = (props) => {
     const{changeFunction, submitFunction, values} = props;
+    const{name, email, role, location} = values;
+
      return (
         <div>
             <h3>Enter Team Member Information Below:</h3>
@@ -11,7 +13,7 @@ const Form = (props) => {
                     <input
                     type="text"
                     name="name"
-                    value={values.name}
+                    value={name}
                     onChange={(evt) => changeFunction(evt)}
                     placeholder="Full Name"
                     />
@@ -22,7 +24,7 @@ const Form = (props) => {
                     placeholder="Email Address"
                     type="text"
                     name="email"
-                    value={values.email}
+                    value={email}
                     onChange={(evt) => changeFunction(evt)}
                     />
                 </label>
@@ -30,7 +32,7 @@ const Form = (props) => {
                     Role:
                     <select
                         name="role"
-                        value={values.role}
+                        value={role}
                         onChange={(evt) => changeFunction(evt)}
                     >
                         <option value="">Select Member Role</option>
@@ -48,7 +50,7 @@ const Form = (props) => {
                     placeholder="Member Location"
                     type="text"
                     name="location"
-                    value={values.location}
+                    value={location}
                     onChange={changeFunction}
                     />
                 </label>

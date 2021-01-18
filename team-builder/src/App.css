@@ -24,6 +24,11 @@ td {
     padding: 5px;
 }
 
+button {
+    padding: 5px;
+    margin-right: 10px;
+}
+
 input:hover {
     background: rgba(255, 0, 255, 0.671);
 }
