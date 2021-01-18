@@ -1,0 +1,38 @@
+#teamContainer {
+    border: 2px dashed black;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-left: 20px;
+}
+
+select {
+    margin-left: 20px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input:hover {
+    background: rgba(255, 0, 255, 0.671);
+}
+
+select:hover {
+    background: rgba(255, 0, 255, 0.671);
+}
